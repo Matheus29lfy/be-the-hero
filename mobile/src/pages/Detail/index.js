@@ -3,7 +3,7 @@ import React from 'react'
 import { Feather } from '@expo/vector-icons'
 import { useNavigation, useRoute } from '@react-navigation/native'
 import {  View, Image, Text, TouchableOpacity, Linking } from 'react-native';
-//import * as MailCompose from 'expo-mail-composer'
+import * as MailCompose from 'expo-mail-composer'
 
 import logoImg from '../../assets/logo.png'
 
@@ -12,10 +12,10 @@ import styles from './styles'
 export default function Detail() {
 
   const navigation = useNavigation()
-  //const route = useRoute()
+  const route = useRoute()
 
- // const incident = route.params.incident
-//  const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso da "${incident.title}" com valor de ${Intl.NumberFormat('pt-BR',{ style: 'currency', currency: 'BRL'}).format(incident.value)}`
+  const incident = route.params.incident
+  const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso da "${incident.title}" com valor de ${Intl.NumberFormat('pt-BR',{ style: 'currency', currency: 'BRL'}).format(incident.value)}`
 
 //  const message = `Olá APAD, estou entrando em contato pois gostaria de ajudar no caso da "cachorrinha Atropelada" com valor de R$ 120,00`
 
@@ -27,17 +27,17 @@ export default function Detail() {
 
     function sendMail(){
       MailCompose.composeAsync({
-       // subject: `Herói do caso: ${incident.title}`,
-        subject: `Herói do caso: cachorrrinha atropelada`,
-      //  recipients: [incident.email],
-       recipients: ['email@email.com'],
+       subject: `Herói do caso: ${incident.title}`,
+//        subject: `Herói do caso: cachorrrinha atropelada`,
+       recipients: [incident.email],
+      // recipients: ['email@email.com'],
         body: message
       })
     }
 
     function sendWhatsapp(){
-    //  Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}text=${message}`)
-      Linking.openURL(`whatsapp://send?phone=11987456321text=${message}`)
+      Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}text=${message}`)
+     // Linking.openURL(`whatsapp://send?phone=11987456321text=${message}`)
 
     }
 
@@ -54,22 +54,19 @@ export default function Detail() {
       <View style = {styles.incident}> 
         <Text style = {[styles.incidentProperty, {marginTop:0}]}>ONG:</Text> 
 
-       {/*  <Text style = {styles.incidentValue}>{incident.name} de
-  {incident.city}/{incident.uf}</Text>  */}
-
-            <Text style = {styles.incidentValue}>APAD de DIADEMA /SP</Text>
+         <Text style = {styles.incidentValue}>{incident.name} de
+  {incident.city}/{incident.uf}</Text>
   
            <Text style = {styles.incidentProperty}>CASO:</Text>
-           {/*<Text style = {styles.incidentValue}>{incident.title}</Text> */}
-           <Text style = {styles.incidentValue}>CASO 1</Text> 
   
            <Text style = {styles.incidentProperty}>VALOR:</Text>
-          {/* <Text style = {styles.incidentValue}>
+         
+          <Text style = {styles.incidentValue}>
              {Intl.NumberFormat('pt-BR',{
                style: 'currency',
                 currency: 'BRL' 
                 }).format(incident.value)}
-              </Text>*/}
+              </Text>
               <Text style = {styles.incidentValue}>R$120,00</Text>
        </View>      
 
