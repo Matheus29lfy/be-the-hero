@@ -3227,7 +3227,7 @@ packages:
       react-native: '*'
 
   react-native@https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz:
-    resolution: {integrity: sha512-wpsK4vGw8Lr4KI2WmHhbabXafWO5wYAZguCZOB+kLhwR2bCn7W9gvdCfG7fkMKHeQVTm6cmBWYHzarlP0xOqTA==, tarball: https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz}
+    resolution: {tarball: https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz}
     version: 0.61.4
     engines: {node: '>=8.3'}
     hasBin: true
