@@ -4,6 +4,17 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  tar: ^6.2.1
+  braces: ^3.0.3
+  micromatch: ^4.0.8
+  cross-spawn: ^7.0.5
+  nth-check: ^2.0.1
+  ws: ^8.17.1
+  logkitty: ^0.7.1
+  hermes-engine: ^0.11.0
+  node-fetch: ^2.7.0
+
 importers:
 
   .:
@@ -26,6 +37,9 @@ importers:
       sqlite3:
         specifier: ^5.1.7
         version: 5.1.7
+      tar:
+        specifier: ^6.2.1
+        version: 6.2.1
     devDependencies:
       jest:
         specifier: ^30.2.0
