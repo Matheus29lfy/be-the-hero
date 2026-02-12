@@ -8,26 +8,26 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@react-native-community/masked-view": "0.1.5",
-    "@react-navigation/native": "^5.1.4",
-    "@react-navigation/stack": "^5.2.9",
-    "axios": "^0.19.2",
-    "expo": "~36.0.0",
-    "expo-constants": "~8.0.0",
-    "expo-mail-composer": "~8.0.0",
+    "@react-native-community/masked-view": "0.1.11",
+    "@react-navigation/native": "^7.1.28",
+    "@react-navigation/stack": "^7.7.1",
+    "axios": "^1.13.5",
+    "expo": "~54.0.33",
+    "expo-constants": "~18.0.13",
+    "expo-mail-composer": "~15.0.8",
     "intl": "^1.2.5",
-    "react": "~16.9.0",
-    "react-dom": "~16.9.0",
+    "react": "~19.2.4",
+    "react-dom": "~19.2.4",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
-    "react-native-gesture-handler": "~1.5.0",
-    "react-native-reanimated": "~1.4.0",
-    "react-native-safe-area-context": "0.6.0",
-    "react-native-screens": "2.0.0-alpha.12",
-    "react-native-web": "~0.11.7"
+    "react-native-gesture-handler": "~2.30.0",
+    "react-native-reanimated": "~4.2.1",
+    "react-native-safe-area-context": "5.6.2",
+    "react-native-screens": "4.23.0",
+    "react-native-web": "~0.21.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "babel-preset-expo": "~8.0.0"
+    "@babel/core": "^7.29.0",
+    "babel-preset-expo": "~54.0.10"
   },
   "private": true
 }
