@@ -16,25 +16,30 @@
     "cross-env": "^10.1.0",
     "express": "^5.2.1",
     "knex": "^3.1.0",
-    "sqlite3": "^5.1.7",
-    "tar": "^7.5.7"
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "jest": "^30.2.0",
     "nodemon": "^3.1.11",
-    "supertest": "^7.2.2"
+    "supertest": "^7.2.2",
+    "tar": "7.5.7"
   },
   "pnpm": {
     "overrides": {
-      "tar": "^6.2.1",
-      "braces": "^3.0.3",
-      "micromatch": "^4.0.8",
-      "cross-spawn": "^7.0.5",
-      "nth-check": "^2.0.1",
-      "ws": "^8.17.1",
       "logkitty": "^0.7.1",
-      "hermes-engine": "^0.11.0",
-      "node-fetch": "^2.7.0"
-    }
+      "hermes-engine": "0.11.0",
+      "tar": "^6.2.1",
+      "node-fetch": "^2.7.0",
+      "ws": "^7.5.10",
+      "yargs-parser": "^21.1.1",
+      "postcss": "^8.4.31",
+      "webpack-dev-server": "^4.15.1",
+      "node-notifier": "^8.0.1",
+      "react-devtools-core": "^4.28.5"
+    },
+    "ignoredBuiltDependencies": [
+      "sqlite3",
+      "unrs-resolver"
+    ]
   }
 }

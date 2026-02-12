@@ -8,7 +8,6 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@react-native-community/masked-view": "0.1.11",
     "@react-navigation/native": "^7.1.28",
     "@react-navigation/stack": "^7.7.1",
     "axios": "^1.13.5",
@@ -30,14 +29,18 @@
     "babel-preset-expo": "~54.0.10"
   },
   "private": true,
-  "pnpm": {
+"pnpm": {
   "overrides": {
+    "logkitty": "^0.7.1",
+    "hermes-engine": "0.11.0",
     "tar": "^6.2.1",
-    "braces": "^3.0.3",
-    "micromatch": "^4.0.8",
-    "cross-spawn": "^7.0.5",
-    "nth-check": "^2.0.1",
-    "ws": "^8.17.1"
+    "node-fetch": "^2.7.0",
+    "ws": "^7.5.10",
+    "yargs-parser": "^21.1.1",
+    "postcss": "^8.4.31",
+    "webpack-dev-server": "^4.15.1",
+    "node-notifier": "^8.0.1",
+    "react-devtools-core": "^4.28.5"
   }
 }
 }
