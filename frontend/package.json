@@ -55,7 +55,9 @@
     "node-notifier": "^8.0.1",
     "react-devtools-core": "^4.28.5",
     "mem": "^4.0.0",
-    "tmp": "^0.2.3"
+    "tmp": "^0.2.3",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0"
   }
 }
 }
