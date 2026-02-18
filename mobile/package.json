@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@react-navigation/native": "^7.1.28",
-    "@react-navigation/stack": "^7.7.1",
+    "@react-navigation/stack": "^7.7.2",
     "axios": "^1.13.5",
     "expo": "~54.0.33",
     "expo-constants": "~18.0.13",
@@ -19,7 +19,7 @@
     "react-dom": "~19.2.4",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
     "react-native-gesture-handler": "~2.30.0",
-    "react-native-reanimated": "~4.2.1",
+    "react-native-reanimated": "~4.2.2",
     "react-native-safe-area-context": "5.6.2",
     "react-native-screens": "4.23.0",
     "react-native-web": "~0.21.2"
@@ -36,17 +36,20 @@
       "braces": "^3.0.3",
       "micromatch": "^4.0.8",
       "nth-check": "^2.0.1",
-    "webpack-dev-server": "^5.0.4",
-    "logkitty": "^0.7.1",
-    "hermes-engine": "0.11.0",
-    "node-fetch": "^2.7.0",
-    "ws": "^7.5.10",
-    "yargs-parser": "^21.1.1",
-    "postcss": "^8.4.31",
-    "node-notifier": "^8.0.1",
-    "react-devtools-core": "^4.28.5",
-    "mem": "^4.0.0",
-    "tmp": "^0.2.3"
+      "webpack-dev-server": "^5.0.4",
+      "logkitty": "^0.7.1",
+      "hermes-engine": "0.11.0",
+      "node-fetch": "^2.7.0",
+      "ws": "^7.5.10",
+      "yargs-parser": "^21.1.1",
+      "postcss": "^8.4.31",
+      "node-notifier": "^8.0.1",
+      "react-devtools-core": "^4.28.5",
+      "mem": "^4.0.0",
+      "tmp": "^0.2.3",
+      "ajv": "^8.17.1",
+      "ajv-keywords": "^5.1.0",
+      "jsonpath": "^1.1.1"
+    }
   }
-}
 }
